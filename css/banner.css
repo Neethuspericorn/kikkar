@@ -1,0 +1,336 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.logo {
+  margin-top: 94px;
+  width: 100%;
+}
+.logo img {
+  width: 190px;
+  outline: 0;
+}
+
+.bnr-sec {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -100px;
+}
+@media (max-width: 1280px) {
+  .bnr-sec {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .bnr-sec {
+    height: auto;
+  }
+}
+
+.banner-top {
+  min-height: 100vh;
+  background: url(../img/kikkr-banner.svg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner-top .caption-area {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 50%;
+  color: #fff;
+}
+.banner-top .caption-area .title-tp {
+  color: #fff;
+  font-size: 46px;
+  line-height: 57px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.banner-top .caption-area p {
+  font-size: 19px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.banner-top .caption-area .lr-more {
+  color: #fff;
+  font-size: 19px;
+  line-height: 23px;
+  text-decoration: none;
+  background-color: #ff0000;
+  border-radius: 27px;
+  min-width: 297px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+  -webkit-transition: 0.2s ease-out all;
+  -moz-transition: 0.2s ease-out all;
+  -ms-transition: 0.2s ease-out all;
+  transition: 0.2s ease-out all;
+}
+.banner-top .caption-area .lr-more:hover {
+  background-color: #910707;
+}
+.banner-top .img-area {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 50%;
+}
+@media (max-width: 991px) {
+  .banner-top .img-area {
+    max-width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .banner-top .img-area {
+    max-width: 100%;
+    margin-top: 0px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .banner-top .img-area img {
+    max-width: 300px !important;
+  }
+}
+.banner-top .img-area img {
+  max-width: 300px;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  overflow: hidden;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 35px;
+  height: 50px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
+  border-radius: 23px;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 0px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  top: 16px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+  transition: all 0.2s ease-in;
+}
+
+.scroll-down:after {
+  content: "";
+  width: 2px;
+  height: 17px;
+  background-color: #fff;
+  position: absolute;
+  left: calc(50% - 0.2px);
+  top: 12px;
+  transition: all 0.2s ease-in;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@media (max-width: 1679px) {
+  .logo {
+    margin-top: 74px;
+  }
+
+  .banner-top .caption-area .title-tp {
+    color: #fff;
+    font-size: 33px;
+    line-height: 45px;
+  }
+
+  .banner-top .caption-area .lr-more {
+    font-size: 16px;
+  }
+
+  .scroll-down {
+    width: 32px;
+    height: 44px;
+    border-width: 1px;
+  }
+
+  .scroll-down:before {
+    border-width: 1px;
+    border-width: 0px 0 1px 1px;
+  }
+
+  .scroll-down:after {
+    width: 1px;
+    left: calc(50% + 0.8px);
+  }
+
+  .banner-top .caption-area .title-tp {
+    margin-bottom: 40px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .banner-top .caption-area p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .banner-top .caption-area .lr-more {
+    min-width: 240px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .logo {
+    margin-bottom: 0px;
+  }
+
+  .banner-top {
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+
+  .banner-top .caption-area {
+    margin-top: 0px;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .banner-top {
+    min-height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .logo {
+    margin-top: 20px;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .banner-top .caption-area {
+    max-width: 55%;
+  }
+}
+@media (max-width: 767px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .logo {
+    margin-top: 40px;
+  }
+
+  .banner-top .caption-area p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    text-shadow: 3px 0px 2px black;
+  }
+
+  .banner-top .caption-area {
+    max-width: 100%;
+    margin-top: 150px;
+    height: auto;
+  }
+
+  .banner-top .caption-area .title-tp {
+    font-size: 29px;
+    line-height: 41px;
+    margin-bottom: 17px;
+  }
+}
+@media (max-width: 479px) {
+  .banner-top > div {
+    min-height: 100vh;
+  }
+
+  .banner-top {
+    min-height: 100vh;
+    background: url(../img/kikkr-banner.svg) no-repeat center center;
+    background-size: cover;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+
+  .banner-top .caption-area .lr-more {
+    min-width: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: -40px;
+  }
+}
+
+/*# sourceMappingURL=banner.css.map */
